@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Insect App</string>
+    <string name="load_image">Load Image</string>
+    <string name="take_image">Take Image</string>
+    <string name="result_here">Result here</string>
+    <string name="click_info">Click on the result text to search on Google</string>
+    <string name="output">Output:</string>
+    <string name="select_an_image">Select an Image</string>
+</resources>

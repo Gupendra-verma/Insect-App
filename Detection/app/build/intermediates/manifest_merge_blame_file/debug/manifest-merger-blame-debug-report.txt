@@ -1,0 +1,111 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.tensorflow.codelabs.objectdetection"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml
+10
+11    <queries>
+11-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:4:5-8:15
+12        <intent>
+12-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:5:9-7:18
+13            <action android:name="android.media.action.IMAGE_CAPTURE" />
+13-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:6:13-73
+13-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:6:21-70
+14        </intent>
+15    </queries>
+16
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+20
+21    <application
+21-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:10:5-38:19
+22        android:allowBackup="true"
+22-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:11:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.7.0] D:\Android Project\Altus\.gradle\7.0.2\caches\transforms-3\e36cb75ae4f72b56337362533afd3af2\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+24        android:debuggable="true"
+25        android:extractNativeLibs="false"
+26        android:icon="@mipmap/ic_launcher"
+26-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:12:9-43
+27        android:label="Insect Detection"
+27-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:13:9-41
+28        android:roundIcon="@mipmap/ic_launcher_round"
+28-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:14:9-54
+29        android:supportsRtl="true"
+29-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:15:9-35
+30        android:theme="@style/Theme.ObjectDetection" >
+30-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:16:9-53
+31        <activity
+31-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:17:9-24:20
+32            android:name="org.tensorflow.codelabs.objectdetection.MainActivity"
+32-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:17:19-86
+33            android:exported="true" >
+33-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:18:13-36
+34            <intent-filter>
+34-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:19:13-23:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:20:17-69
+35-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:20:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:22:17-77
+37-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:22:27-74
+38            </intent-filter>
+39        </activity>
+40
+41        <provider
+41-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:26:9-34:20
+42            android:name="androidx.core.content.FileProvider"
+42-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:27:13-62
+43            android:authorities="org.tensorflow.codelabs.objectdetection.fileprovider"
+43-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:28:13-87
+44            android:exported="false"
+44-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:29:13-37
+45            android:grantUriPermissions="true" >
+45-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:30:13-47
+46            <meta-data
+46-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:31:13-33:54
+47                android:name="android.support.FILE_PROVIDER_PATHS"
+47-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:32:17-67
+48                android:resource="@xml/file_paths" />
+48-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:33:17-51
+49        </provider>
+50
+51        <meta-data
+51-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:35:9-37:57
+52            android:name="preloaded_fonts"
+52-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:36:13-43
+53            android:resource="@array/preloaded_fonts" />
+53-->D:\Android Project\InsectDetection\app\src\main\AndroidManifest.xml:37:13-54
+54
+55        <provider
+55-->[androidx.emoji2:emoji2:1.0.0] D:\Android Project\Altus\.gradle\7.0.2\caches\transforms-3\ca1977ef86c10098c974d21a9795df6e\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+56            android:name="androidx.startup.InitializationProvider"
+56-->[androidx.emoji2:emoji2:1.0.0] D:\Android Project\Altus\.gradle\7.0.2\caches\transforms-3\ca1977ef86c10098c974d21a9795df6e\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+57            android:authorities="org.tensorflow.codelabs.objectdetection.androidx-startup"
+57-->[androidx.emoji2:emoji2:1.0.0] D:\Android Project\Altus\.gradle\7.0.2\caches\transforms-3\ca1977ef86c10098c974d21a9795df6e\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+58            android:exported="false" >
+58-->[androidx.emoji2:emoji2:1.0.0] D:\Android Project\Altus\.gradle\7.0.2\caches\transforms-3\ca1977ef86c10098c974d21a9795df6e\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+59            <meta-data
+59-->[androidx.emoji2:emoji2:1.0.0] D:\Android Project\Altus\.gradle\7.0.2\caches\transforms-3\ca1977ef86c10098c974d21a9795df6e\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+60                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+60-->[androidx.emoji2:emoji2:1.0.0] D:\Android Project\Altus\.gradle\7.0.2\caches\transforms-3\ca1977ef86c10098c974d21a9795df6e\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+61                android:value="androidx.startup" />
+61-->[androidx.emoji2:emoji2:1.0.0] D:\Android Project\Altus\.gradle\7.0.2\caches\transforms-3\ca1977ef86c10098c974d21a9795df6e\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+62            <meta-data
+62-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Android Project\Altus\.gradle\7.0.2\caches\transforms-3\0941d6c05a1b5773d94a6bfa88dc6daa\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+63                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+63-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Android Project\Altus\.gradle\7.0.2\caches\transforms-3\0941d6c05a1b5773d94a6bfa88dc6daa\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+64                android:value="androidx.startup" />
+64-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Android Project\Altus\.gradle\7.0.2\caches\transforms-3\0941d6c05a1b5773d94a6bfa88dc6daa\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+65        </provider>
+66    </application>
+67
+68</manifest>
